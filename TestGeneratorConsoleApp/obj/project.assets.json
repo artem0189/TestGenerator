@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "TestGeneratorLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TestGeneratorLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestGeneratorLib.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TestGeneratorLib/1.0.0": {
+      "type": "project",
+      "path": "../TestGeneratorLib/TestGeneratorLib.csproj",
+      "msbuildProject": "../TestGeneratorLib/TestGeneratorLib.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "TestGeneratorLib >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\USER\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\USER\\Desktop\\лб\\спп\\TestGeneratorApp\\TestGeneratorConsoleApp\\TestGeneratorLib\\TestGeneratorLib.csproj": {
+              "projectPath": "C:\\Users\\USER\\Desktop\\лб\\спп\\TestGeneratorApp\\TestGeneratorConsoleApp\\TestGeneratorLib\\TestGeneratorLib.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

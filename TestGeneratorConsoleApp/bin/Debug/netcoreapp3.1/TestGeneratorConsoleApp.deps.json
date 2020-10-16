@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "TestGeneratorConsoleApp/1.0.0": {
+        "dependencies": {
+          "TestGeneratorLib": "1.0.0"
+        },
+        "runtime": {
+          "TestGeneratorConsoleApp.dll": {}
+        }
+      },
+      "TestGeneratorLib/1.0.0": {
+        "runtime": {
+          "TestGeneratorLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestGeneratorConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestGeneratorLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

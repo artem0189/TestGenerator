@@ -1,0 +1,7 @@
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\bin\Debug\netcoreapp3.1\TestGeneratorLib.deps.json
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\bin\Debug\netcoreapp3.1\TestGeneratorLib.dll
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\bin\Debug\netcoreapp3.1\TestGeneratorLib.pdb
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\obj\Debug\netcoreapp3.1\TestGeneratorLib.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\obj\Debug\netcoreapp3.1\TestGeneratorLib.AssemblyInfo.cs
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\obj\Debug\netcoreapp3.1\TestGeneratorLib.dll
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorLib\obj\Debug\netcoreapp3.1\TestGeneratorLib.pdb

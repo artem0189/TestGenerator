@@ -1,0 +1,14 @@
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.exe
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.deps.json
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.runtimeconfig.json
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.runtimeconfig.dev.json
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.dll
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorConsoleApp.pdb
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorLib.dll
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\bin\Debug\netcoreapp3.1\TestGeneratorLib.pdb
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.AssemblyInfo.cs
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.csproj.CopyComplete
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.dll
+C:\Users\USER\Desktop\лб\спп\TestGeneratorApp\TestGeneratorConsoleApp\TestGeneratorConsoleApp\obj\Debug\netcoreapp3.1\TestGeneratorConsoleApp.pdb
