@@ -1,10 +1,7 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace TestGeneratorLib.IO
+namespace TestGeneratorConsoleApp.IO
 {
     internal class File
     {
@@ -18,7 +15,7 @@ namespace TestGeneratorLib.IO
             FileName = "TestTemplate" + Path.GetFileName(filePath);
         }
 
-        internal async Task Read(string filePath)
+        internal async Task ReadFromFile(string filePath)
         {
             using (StreamReader reader = new StreamReader(filePath))
             {

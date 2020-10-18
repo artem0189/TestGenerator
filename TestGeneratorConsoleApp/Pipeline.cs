@@ -2,25 +2,31 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-using TestGeneratorLib.IO;
+using TestGeneratorLib;
+using TestGeneratorConsoleApp.IO;
 
-namespace TestGeneratorLib
+namespace TestGeneratorConsoleApp
 {
-    internal class Pipeline
+    public class Pipeline
     {
         private string FileFolder { get; }
-        private int FilesInputCount { get; }
-        private int FilesOutputCount { get; }
-        private int TasksCount { get; }
+        private int FilesInputCount { get; set; } = 1;
+        private int FilesOutputCount { get; set; } = 1;
+        private int TasksCount { get; set; } = 1;
 
-        internal Pipeline(int filesInputCount, int filesOutputCount, int tasksCount)
+        public Pipeline(string fileFolder)
+        {
+            FileFolder = fileFolder;
+        }
+
+        public void SetParameters(int filesInputCount, int filesOutputCount, int tasksCount)
         {
             FilesInputCount = filesInputCount;
             FilesOutputCount = filesOutputCount;
             TasksCount = tasksCount;
         }
 
-        internal async Task Processing(List<string> filesPath)
+        public async Task Processing(List<string> filesPath)
         {
             var readingBlock = new TransformBlock<string, File>(
                 async filePath => await ReadFile(filePath),
@@ -35,14 +41,14 @@ namespace TestGeneratorLib
                     MaxDegreeOfParallelism = TasksCount
                 });
             var writingBlock = new ActionBlock<File>(
-                file => WriteFile(file),
+                async file => await WriteFile(file),
                 new ExecutionDataflowBlockOptions
                 {
                     MaxDegreeOfParallelism = FilesOutputCount
                 });
 
-            readingBlock.LinkTo(generatingBlock);
-            generatingBlock.LinkTo(writingBlock);
+            readingBlock.LinkTo(generatingBlock, new DataflowLinkOptions { PropagateCompletion = true });
+            generatingBlock.LinkTo(writingBlock, new DataflowLinkOptions { PropagateCompletion = true });
 
             for (int i = 0; i < filesPath.Count; i++)
             {
@@ -56,12 +62,14 @@ namespace TestGeneratorLib
         private async Task<File> ReadFile(string filePath)
         {
             File file = new File(FileFolder, filePath);
-            await file.Read(filePath);
+            await file.ReadFromFile(filePath);
             return file;
         }
 
-        private File GenerateTest(File file)
+        private async Task<File> GenerateTest(File file)
         {
+            TestGenerator generator = new TestGenerator();
+            file.FileContent = await Task.Run(() => generator.Generate(file.FileContent));
             return file;
         }
 
@@ -71,3 +79,4 @@ namespace TestGeneratorLib
         }
     }
 }
+

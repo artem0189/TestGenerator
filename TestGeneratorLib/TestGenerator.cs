@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace TestGeneratorLib
 {
     public class TestGenerator
     {
-        private Pipeline _conveyor;
-        
-        public TestGenerator(int filesInputCount, int filesOutputCount, int tasksCount)
-        {
-            _conveyor = new Pipeline(filesInputCount, filesOutputCount, tasksCount);
-        }
+        private int g;
 
-        public void Generate(List<string> inputFiles, string outputFolder)
+        public string Generate(string content)
         {
-
+            return "";
         }
     }
 }
