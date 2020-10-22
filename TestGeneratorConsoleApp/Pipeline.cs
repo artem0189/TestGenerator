@@ -68,8 +68,7 @@ namespace TestGeneratorConsoleApp
 
         private async Task<File> GenerateTest(File file)
         {
-            TestGenerator generator = new TestGenerator();
-            file.FileContent = await Task.Run(() => generator.Generate(file.FileContent));
+            file.FileContent = await Task.Run(() => TestGenerator.Generate(file.FileContent));
             return file;
         }
 

@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
 
 namespace TestGeneratorLib
 {
-    public class TestGenerator
+    public static class TestGenerator
     {
-        private int g;
-
-        public string Generate(string content)
+        public static string Generate(string content)
         {
-            return "";
+            // Check content for correct
+            SyntaxNode root = CSharpSyntaxTree.ParseText(content).GetRoot();
+            return new TestCreator(root).GetTest();
         }
     }
 }

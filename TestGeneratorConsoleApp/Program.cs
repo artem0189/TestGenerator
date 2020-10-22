@@ -22,6 +22,7 @@ namespace TestGeneratorConsoleApp
 
         static async Task Main(string[] args)
         {
+            /*
             Console.WriteLine("Введите файлы для генерации тестов:");
             List<string> files = InputFiles();
             Console.WriteLine("Введите папку для вывода:");
@@ -35,6 +36,12 @@ namespace TestGeneratorConsoleApp
 
             Pipeline pipeline = new Pipeline(folder);
             pipeline.SetParameters(pipelineParams[0], pipelineParams[1], pipelineParams[3]);
+            */
+
+            Pipeline pipeline = new Pipeline("C:/Users/USER/Desktop/res");
+            pipeline.SetParameters(2, 2, 3);
+            List<string> files = new List<string>() { "C:/Users/USER/Desktop/res/TreeClass.cs" };
+            await pipeline.Processing(files);
         }
     }
 }
