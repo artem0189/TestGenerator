@@ -18,8 +18,8 @@ namespace TestGeneratorLib.Analys
         {
             Name = classDeclaration.Identifier.ValueText;
             IsStatic = classDeclaration.Modifiers.Where(md => md.Kind().Equals(SyntaxKind.StaticKeyword)).Any();
-            Parameters = GetConstructor(classDeclaration).ParameterList.Parameters.Select(pr => new Parameter(pr)).ToArray();
-            Methods = classDeclaration.DescendantNodes().OfType<MethodDeclarationSyntax>().Where(mt => mt.Modifiers.Where(md => md.Kind().Equals(SyntaxKind.PublicKeyword)).Any()).Select(mt => new Method(this, mt)).ToArray();
+            Parameters = GetConstructor(classDeclaration)?.ParameterList.Parameters.Select(pr => new Parameter(pr)).ToArray();
+            Methods = classDeclaration.DescendantNodes().OfType<MethodDeclarationSyntax>().Where(mt => mt.Modifiers.Where(md => md.Kind().Equals(SyntaxKind.PublicKeyword)).Any() && mt.TypeParameterList == null).Select(mt => new Method(this, mt)).ToArray();
         }
 
         private ConstructorDeclarationSyntax GetConstructor(ClassDeclarationSyntax classDeclaration)

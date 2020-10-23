@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorConsoleApp", "TestGeneratorConsoleApp\TestGeneratorConsoleApp.csproj", "{72E65C41-AE55-4C2D-9007-81C36E65E5F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGeneratorConsoleApp", "TestGeneratorConsoleApp\TestGeneratorConsoleApp.csproj", "{72E65C41-AE55-4C2D-9007-81C36E65E5F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorLib", "TestGeneratorLib\TestGeneratorLib.csproj", "{108552F9-EE8E-4E15-AB1C-4C9102A02682}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGeneratorLib", "TestGeneratorLib\TestGeneratorLib.csproj", "{108552F9-EE8E-4E15-AB1C-4C9102A02682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestGenerator", "NUnitTestGenerator\NUnitTestGenerator.csproj", "{6C4B7AD1-9EEF-43C6-8974-C641671AB231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{108552F9-EE8E-4E15-AB1C-4C9102A02682}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{108552F9-EE8E-4E15-AB1C-4C9102A02682}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{108552F9-EE8E-4E15-AB1C-4C9102A02682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4B7AD1-9EEF-43C6-8974-C641671AB231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4B7AD1-9EEF-43C6-8974-C641671AB231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4B7AD1-9EEF-43C6-8974-C641671AB231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4B7AD1-9EEF-43C6-8974-C641671AB231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

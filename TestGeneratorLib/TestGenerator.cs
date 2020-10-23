@@ -10,7 +10,6 @@ namespace TestGeneratorLib
     {
         public static string Generate(string content)
         {
-            // Check content for correct
             SyntaxNode root = CSharpSyntaxTree.ParseText(content).GetRoot();
             return new TestCreator(root).GetTest();
         }

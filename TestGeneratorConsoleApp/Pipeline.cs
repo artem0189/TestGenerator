@@ -35,7 +35,7 @@ namespace TestGeneratorConsoleApp
                     MaxDegreeOfParallelism = FilesInputCount
                 });
             var generatingBlock = new TransformBlock<File, File>(
-                file => GenerateTest(file),
+                async file => await GenerateTest(file),
                 new ExecutionDataflowBlockOptions
                 {
                     MaxDegreeOfParallelism = TasksCount

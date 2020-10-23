@@ -40,7 +40,7 @@ namespace TestGeneratorConsoleApp
 
             Pipeline pipeline = new Pipeline("C:/Users/USER/Desktop/res");
             pipeline.SetParameters(2, 2, 3);
-            List<string> files = new List<string>() { "C:/Users/USER/Desktop/res/TreeClass.cs" };
+            List<string> files = new List<string>() { "C:/Users/USER/Desktop/res/TreeClass.cs", "C:/Users/USER/Desktop/res/Faker.cs", "C:/Users/USER/Desktop/res/Generator.cs" };
             await pipeline.Processing(files);
         }
     }

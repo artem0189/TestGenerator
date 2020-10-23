@@ -15,7 +15,7 @@ namespace TestGeneratorLib.Analys
         internal Namespace(NamespaceDeclarationSyntax namespaceDeclaration)
         {
             Name = namespaceDeclaration.Name.ToString();
-            Classes = namespaceDeclaration.DescendantNodes().OfType<ClassDeclarationSyntax>().Select(cl => new Class(cl)).ToArray();
+            Classes = namespaceDeclaration.DescendantNodes().OfType<ClassDeclarationSyntax>().Where(cl => cl.TypeParameterList == null).Select(cl => new Class(cl)).ToArray();
         }
     }
 }
